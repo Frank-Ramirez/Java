@@ -1,0 +1,14 @@
+CREATE DATABASE farmacia;
+use farmacia;
+create table usuario(id int PRIMARY KEY AUTO_INCREMENT , nombre varchar(20), pass varchar(200), tipon varchar(15), tipo varchar (20));
+create table venta(codigo int (20) PRIMARY KEY, nombreP varchar (30), cantidad int (6), total int (20), fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+create table tipo(cargo varchar(15), tipo int (1));
+insert into tipo values('Administrador',1);
+insert into tipo values('Empleado',2);
+create table producto(qr int(20) PRIMARY KEY,nombre varchar(30), precio_venta varchar(10),precio_compra varchar(10),fecha_caducidad varchar(50),categoria varchar(20), subcategoria varchar(20), presentacion varchar(20) presentacion varchar(20), fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+create table categoria(nombre varchar(30));
+create table presentacion(nombre varchar(30));
+
+
+
+

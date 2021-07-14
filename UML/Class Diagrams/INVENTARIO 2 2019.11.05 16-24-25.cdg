@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="INVENTARIO 2">
+  <ClassDiagramComponents>
+    <Class name="buscar" package="Controlador" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="buscarQR" returnType="boolean" visibility="public"/>
+        <Method name="buscarNom" returnType="boolean" visibility="public"/>
+        <Method name="buscarTodo" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConsultasVenta" package="Controlador" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="categoria" returnType="boolean" visibility="public"/>
+        <Method name="cargo" returnType="boolean" visibility="public"/>
+        <Method name="Registrar" returnType="boolean" visibility="public">
+          <Argument type="Registro" name="g"/>
+        </Method>
+        <Method name="NewCategoria" returnType="boolean" visibility="public">
+          <Argument type="Categoria" name="c"/>
+        </Method>
+        <Method name="presentacion" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConsultaUSR" package="Controlador" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="RegistrarUsuario" returnType="boolean" visibility="public">
+          <Argument type="USR" name="u"/>
+        </Method>
+        <Method name="bteliminarU" returnType="boolean" visibility="public">
+          <Argument type="USR" name="usr"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ConsultaVenta" package="Controlador" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="seleccioanr" returnType="boolean" visibility="public">
+          <Argument type="Registro" name="re"/>
+        </Method>
+        <Method name="guardar" returnType="boolean" visibility="public">
+          <Argument type="Registro" name="r"/>
+        </Method>
+        <Method name="eliminarP" returnType="boolean" visibility="public">
+          <Argument type="Registro" name="ma"/>
+        </Method>
+        <Method name="cancelar" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="hash" package="Controlador" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getHash" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="txt"/>
+          <Argument type="String" name="hashType"/>
+        </Method>
+        <Method name="md5" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="txt"/>
+        </Method>
+        <Method name="sha1" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="txt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Login" package="Controlador" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="existeU" returnType="int" visibility="public">
+          <Argument type="String" name="usuario"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tablas" package="Controlador" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="TablaStock" returnType="void" visibility="public"/>
+        <Method name="TablaCategoria" returnType="void" visibility="public"/>
+        <Method name="TablaUsuario" returnType="void" visibility="public"/>
+        <Method name="TablaEliminarUsuario" returnType="void" visibility="public"/>
+        <Method name="TablaVentas" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="BUSCAR" package="inventario" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="b" type="buscar" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="radiogroup" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="rbtnombre" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rbtqr" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rbttodos" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="tablabuscar" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+        <Field name="txtbuscar" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CATEGORIA" package="inventario" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="t" type="Tablas" visibility="package"/>
+        <Field name="btnCategoria" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="tablacategoria" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+        <Field name="txtCATN" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnCategoriaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="inicio" package="inventario" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="btnIniciar" type="javax.swing.JButton" visibility="public" isStatic="true"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panel2" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="txtUSRL" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+        <Field name="txtpassL" type="javax.swing.JPasswordField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnIniciarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="me" package="inventario" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="public" isStatic="true"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="public" isStatic="true"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem3" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem4" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem5" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jMenuItem1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MENU" package="inventario" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="btn1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu4" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem3" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menunuevo" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="menuusuarios" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="menunuevoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btn1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="inventario" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="cv" type="ConsultasVenta" visibility="package"/>
+        <Field name="btnLimpiar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnSave" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbxCategoria" type="javax.swing.JComboBox&lt;String&gt;" visibility="public" isStatic="true"/>
+        <Field name="cbxpresentacion" type="javax.swing.JComboBox&lt;String&gt;" visibility="public" isStatic="true"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="txtfechacaducidad" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="txtnombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtpreciocompra" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtprecioventa" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtqr" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="limpiar" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnSaveActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnLimpiarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ses" package="inventario" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jSeparator2" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panel2" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="txt1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txt2" type="javax.swing.JPasswordField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="STOCK" package="inventario" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="t" type="Tablas" visibility="package"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="tablastock" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="inventario" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="c" type="ConsultasVenta" visibility="package"/>
+        <Field name="q" type="ConsultaUSR" visibility="package"/>
+        <Field name="t1" type="Tablas" visibility="package"/>
+        <Field name="btnNewUSR" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btneliminar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbxTU" type="javax.swing.JComboBox&lt;String&gt;" visibility="public" isStatic="true"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTabbedPane1" type="javax.swing.JTabbedPane" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panel2" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panel3" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="panelCurves2" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="panelCurves3" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="tablaeliminarusr" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+        <Field name="tablausr" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+        <Field name="txtRpass" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="txtRusr" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtid" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="btnNewUSRActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btneliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tablaeliminarusrMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VENTA" package="inventario" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="tr" type="Tablas" visibility="package"/>
+        <Field name="re" type="int" visibility="package"/>
+        <Field name="btnanadir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="labelRes" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="panel1" type="org.edisoncor.gui.panel.Panel" visibility="private"/>
+        <Field name="panelCurves1" type="org.edisoncor.gui.panel.PanelCurves" visibility="private"/>
+        <Field name="tablaventa" type="javax.swing.JTable" visibility="public" isStatic="true"/>
+        <Field name="txtcodigo" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+        <Field name="txtv1" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+        <Field name="txtv2" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+        <Field name="txtv3" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+        <Field name="txtv4" type="javax.swing.JTextField" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="tablaventaMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btnanadirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Categoria" package="Modelo" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="nombreCat" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombreCat" returnType="String" visibility="public"/>
+        <Method name="setNombreCat" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCat"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conexion" package="Modelo" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="usr" type="String" visibility="private" isStatic="true"/>
+        <Field name="pass" type="String" visibility="private" isStatic="true"/>
+        <Field name="url" type="String" visibility="private" isStatic="true"/>
+        <Field name="con" type="Connection" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getConexion" returnType="Connection" visibility="public"/>
+        <Method name="Conectar" returnType="void" visibility="package"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Guardar" package="Modelo" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="nombreP" type="String" visibility="private"/>
+        <Field name="cantidad" type="int" visibility="private"/>
+        <Field name="total" type="double" visibility="private"/>
+        <Field name="fecha" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Registro" package="Modelo" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="qr" type="String" visibility="private"/>
+        <Field name="categoria" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="fecha_registro" type="String" visibility="private"/>
+        <Field name="fecha_caducidad" type="String" visibility="private"/>
+        <Field name="presentacion" type="String" visibility="private"/>
+        <Field name="precio_venta" type="String" visibility="private"/>
+        <Field name="precio_compra" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getQr" returnType="String" visibility="public"/>
+        <Method name="setQr" returnType="void" visibility="public">
+          <Argument type="String" name="qr"/>
+        </Method>
+        <Method name="getCategoria" returnType="String" visibility="public"/>
+        <Method name="setCategoria" returnType="void" visibility="public">
+          <Argument type="String" name="categoria"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getFecha_registro" returnType="String" visibility="public"/>
+        <Method name="setFecha_registro" returnType="void" visibility="public">
+          <Argument type="String" name="fecha_registro"/>
+        </Method>
+        <Method name="getFecha_caducidad" returnType="String" visibility="public"/>
+        <Method name="setFecha_caducidad" returnType="void" visibility="public">
+          <Argument type="String" name="fecha_caducidad"/>
+        </Method>
+        <Method name="getPresentacion" returnType="String" visibility="public"/>
+        <Method name="setPresentacion" returnType="void" visibility="public">
+          <Argument type="String" name="presentacion"/>
+        </Method>
+        <Method name="getPrecio_venta" returnType="String" visibility="public"/>
+        <Method name="setPrecio_venta" returnType="void" visibility="public">
+          <Argument type="String" name="precio_venta"/>
+        </Method>
+        <Method name="getPrecio_compra" returnType="String" visibility="public"/>
+        <Method name="setPrecio_compra" returnType="void" visibility="public">
+          <Argument type="String" name="precio_compra"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="USR" package="Modelo" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="nombreUSR" type="String" visibility="private"/>
+        <Field name="pasword" type="String" visibility="private"/>
+        <Field name="tipon" type="String" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTipon" returnType="String" visibility="public"/>
+        <Method name="setTipon" returnType="void" visibility="public">
+          <Argument type="String" name="tipon"/>
+        </Method>
+        <Method name="getTipo" returnType="String" visibility="public"/>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getNombreUSR" returnType="String" visibility="public"/>
+        <Method name="setNombreUSR" returnType="void" visibility="public">
+          <Argument type="String" name="nombreUSR"/>
+        </Method>
+        <Method name="getPasword" returnType="String" visibility="public"/>
+        <Method name="setPasword" returnType="void" visibility="public">
+          <Argument type="String" name="pasword"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="q" source="inventario.Usuario" target="Controlador.ConsultaUSR" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="c" source="inventario.Usuario" target="Controlador.ConsultasVenta" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.ConsultaVenta" target="Modelo.Registro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="t" source="inventario.CATEGORIA" target="Controlador.Tablas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="t" source="inventario.STOCK" target="Controlador.Tablas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="t1" source="inventario.Usuario" target="Controlador.Tablas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.ConsultaUSR" target="Modelo.USR" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Controlador.ConsultasVenta" target="Modelo.Categoria" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tr" source="inventario.VENTA" target="Controlador.Tablas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.ConsultaUSR" target="Modelo.Conexion"/>
+    <IsRelation name="is" source="Controlador.Login" target="Modelo.Conexion"/>
+    <IsRelation name="is" source="Controlador.ConsultaVenta" target="Modelo.Conexion"/>
+    <HasRelation name="cv" source="inventario.Producto" target="Controlador.ConsultasVenta" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Controlador.ConsultasVenta" target="Modelo.Conexion"/>
+    <UseRelation source="Controlador.ConsultasVenta" target="Modelo.Registro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="b" source="inventario.BUSCAR" target="Controlador.buscar" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
